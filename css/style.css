@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.748);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+}
+
+.nav-list {
+    width: 67%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
+
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 18px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /* background-color: violet; */
+    width: 33%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 57px;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 5px;
+    height: 52px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+    outline: none;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection {
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 85%;
+    margin: auto;
+    height: 70%;
+}
+
+
+.firstHalf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf {
+    width: 30%;
+}
+
+.secondHalf img {
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 5px;
+
+}
+
+.text-big {
+    font-size: 40px;
+}
+
+.text-small {
+    font-size: 18px;
+}
+
+.btn {
+    padding: 11px;
+    margin: 18px 0px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 7px 15px;
+    margin: 18px 0px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    vertical-align: center;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* height: 470px; */
+    max-width: 85%;
+    margin: 100px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sectionLeft{
+    flex-direction: row-reverse;
+}
+
+.imgFluid{
+    width: 300px;
+    border: 3px solid whiblackte;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.paras{
+    padding: 0 50px;
+}
+.sectionTag{
+    padding: 12px 0;
+}
+
+.sectionSubtag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact{
+    background-color: rgba(200, 198, 198, 0.554);
+    height: auto;
+    text-align: center;
+}
+.contact h2{
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 29px;
+}
+
+.form{
+    max-width: 62%;
+    margin: auto;
+}
+
+.form-input{
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    padding: 7px 2px;
+    margin-top: 12px;
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+}
+
+.text-footer{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    color: white;
+}
+
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 3px;
+    margin: 4px 5px;
+}
+@media only screen and (max-width: 1000px){
+    .navbar{
+        flex-direction: column;
+        height: 430px;
+        transition: all 0.5s ease-out;
+    }
+    .rightNav{
+        flex-direction: column;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 65px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .imgFluid{
+        width: 220px;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0;
+    }
+}
